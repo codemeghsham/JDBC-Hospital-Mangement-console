@@ -46,6 +46,7 @@ public class PatientRepository extends DBConfig {
 				patientModel.setPtAppointmentDate(rs.getDate(10));
 				listPatient.add(patientModel);
 				}
+
 			return listPatient.size() > 0 ? listPatient : null;
 		} catch (Exception ex) {
 			System.out.println("Error is" + ex);
